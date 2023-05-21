@@ -22,8 +22,14 @@
 
 * Bread Board
 * Wires
-* 10 Kilo-ohmm Resistor 
+* 10 Kilo-ohmm Resistor (Not Needed with my DHT 11 Module)
 * USB to Micro USB cable
+
+**Connection Guide**
+
+I first start off by connecting my 3.3 Volt and Ground pins from my esp 32 into the positive and negative rails on the bread board. I can then from the power rails connect my Tiny OLED Screen by connecting the positive power rail to VCC on the Screen and Negative rail to Ground (Note that Negative refers to ground). Next I connect the positive rail to Positive input for the DHT 11 Module, then I connect the Negative Input to the Negative Rail on my Bread board. Now I completed connecting all my power cables into their respective modules. 
+
+For the data ports I connect OLED Screen SDA pin to my esp 32s GPIO 21 and then SCL pin to GPIO 22 (Note these are the default ESP 32 pins for I2C communication). Next is the DHT 11 Sensor which its Out Pin connects to my ESP 32's GPIO 4 port (Note some guide mention you will need to use a 10 Kilo Ohm Resister in series with the Out Port, however after some testing I did not need to use the 10 Kiloohm Resister, It worked with and without, Resistor may have already be built in the DHT module.). This conclude the Data port connections Guide. 
 
 **Resources Used**
 
@@ -32,7 +38,6 @@
 * https://web.archive.org/web/20220715145824/https://github.com/beegee-tokyo/DHTesp
 * https://www.amazon.com/dp/B08LQM9PQQ?ref=ppx_yo2ov_dt_b_product_details&th=1
   * Ronald P. Robertson Simple Sequence For Displaying Hello World 
-* 
 
 
 
