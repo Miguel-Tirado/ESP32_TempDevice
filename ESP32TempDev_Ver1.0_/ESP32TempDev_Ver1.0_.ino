@@ -13,6 +13,7 @@
 #define SCREEN_WIDTH 128
 #define SCREEN_HEIGHT 32
 #define OLED_RESET -1
+// I2C address 
 #define SCREEN_ADDRESS 0x3C
 
 #define DHTPIN 4
