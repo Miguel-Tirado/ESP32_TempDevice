@@ -31,6 +31,10 @@ I first start off by connecting my 3.3 Volt and Ground pins from my esp 32 into 
 
 For the data ports I connect OLED Screen SDA pin to my esp 32s GPIO 21 and then SCL pin to GPIO 22 (Note these are the default ESP 32 pins for I2C communication). Next is the DHT 11 Sensor which its Out Pin connects to my ESP 32's GPIO 4 port (Note some guide mention you will need to use a 10 Kilo Ohm Resister in series with the Out Port, however after some testing I did not need to use the 10 Kiloohm Resister, It worked with and without, Resistor may have already be built in the DHT module.). This conclude the Data port connections Guide. 
 
+To connect to my PC which uses a Asus ROG Crosshair VII Dark Hero, AMD Chip set. I used the 5 Volt and GND pin from one of the Aura Gen 2 Headers in order to supply Power to my ESP 32.
+
+
+
 **Resources Used**
 
 * https://web.archive.org/web/20220128170718/https://desire.giesecke.tk/index.php/2018/01/30/esp32-dht11/
